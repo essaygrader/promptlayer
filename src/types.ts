@@ -738,6 +738,7 @@ export interface RunRequest {
   modelParameterOverrides?: Record<string, unknown>;
   provider?: string;
   model?: string;
+  skipLogging?: boolean;
 }
 
 export interface LogRequest {
