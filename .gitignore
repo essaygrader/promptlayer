@@ -1,5 +1,4 @@
 node_modules
-dist/
 .vscode/
 
 # Environment files and local registry credentials

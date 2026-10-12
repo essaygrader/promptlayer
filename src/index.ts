@@ -346,6 +346,7 @@ export class PromptLayer {
     stream = false,
     provider,
     model,
+    skipLogging = false,
   }: RunRequest) {
     const tracer = getTracer();
 
@@ -499,6 +500,9 @@ export class PromptLayer {
         }
 
         const _trackRequest = (body: object) => {
+          if (skipLogging) {
+            return Promise.resolve({ request_id: null, prompt_blueprint: null });
+          }
           const request_end_time = new Date().toISOString();
           return trackRequest(
             this.baseURL,

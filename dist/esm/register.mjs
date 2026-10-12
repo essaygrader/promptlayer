@@ -1,0 +1,2 @@
+import{d as o}from"./chunk-OR6HNU5M.mjs";import"./chunk-36PRNF6G.mjs";import{register as t}from"module";import{pathToFileURL as i}from"url";var n=typeof __filename<"u";if(!n){let e=import.meta.url,r=typeof e=="string"?e:i(`${process.cwd()}/`).href;t("@opentelemetry/instrumentation/hook.mjs",r)}o();
+//# sourceMappingURL=register.mjs.map
